@@ -1,0 +1,52 @@
+main {
+    box-shadow: var(--shadow);
+    background: grey;
+    margin: 5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+h1 {
+    font-size: 1.25rem;
+    background-color: red;
+    border-radius: 10px 10px 0 0;
+    padding: 0.8rem 0 0.8rem 1.18rem;
+}
+
+h2 {
+    text-align: center;
+    margin: 2.5rem;
+}
+
+.asset-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
+    padding: 1em
+}
+
+.asset {
+    max-width: 500px;
+    min-width: 500px;
+    max-height: ;
+    justify-self: center;
+    border-radius: 10px;
+    background: yellowgreen;
+}
+
+.asset-head {
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    padding: 0.5em 0 0.5em 0;
+    background-color: aquamarine;
+}
+
+.asset-content{
+    padding: 1em;
+}
+
+.asset-expand { 
+    width: 25px;
+    height: 25px;
+    margin: 0 1em 0.5em auto;
+}

@@ -1,7 +1,7 @@
 nav {
     background: var(--nav-background);
     display: flex;
-    filter: var(--shadow);
+    filter: drop-shadow(var(--shadow));
     
 }
 
