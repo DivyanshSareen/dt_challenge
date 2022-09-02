@@ -3,8 +3,8 @@ import assetGrid from "./components/AssetGrid.js";
 import JourneyList from "./components/JourneyList.js";
 
 // rendering asset grid
-const asset_grid = document.getElementsByClassName("asset-grid")[0];
-asset_grid.innerHTML = assetGrid(data);
+// const asset_grid = document.getElementsByClassName("asset-grid")[0];
+// asset_grid.innerHTML = assetGrid(data);
 
 // rendering journey board list
 const journey_list = document.getElementsByClassName("journey-list");
