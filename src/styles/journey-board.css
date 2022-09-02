@@ -1,0 +1,73 @@
+.journey-board {
+    position: absolute;
+    background-color: var(--background);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transform: translate(0, 5rem);
+    width: 20%;
+    height: 100vh;
+}
+
+.journey-head {
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius:  0 10px 0 0;
+    padding: 1em;
+    font-family: 'Roboto';
+    background: var(--secondary);
+    color: white
+}
+
+.journey-head > img {
+    width: 25px;
+    height: 25px;
+    color: white;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+
+li {
+    margin-left: 2em;
+    padding: 1em 1em 1em 0;
+    opacity: 90%;
+}
+
+ol > li {
+    font-weight: bold;
+    list-style-type: decimal;
+}
+
+ul > li {
+    list-style-type: circle;
+    box-shadow: var(--list-bottom-shadow);
+}
+
+ul > li:last-child {
+    list-style-type: circle;
+    box-shadow: none;
+}
+
+.demo-head {
+    padding-bottom: 1em;
+    box-shadow: var(--list-bottom-shadow);
+    cursor: pointer;
+}
+
+.journey-board--closed {
+    width: 5%;
+}
+
+.badge {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 10px;
+    width: 2.5rem;
+    height: 2.5rem;
+}

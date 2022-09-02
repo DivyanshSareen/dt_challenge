@@ -55,6 +55,7 @@ h2 {
     width: 25px;
     height: 25px;
     margin: 0 1em 0.5em auto;
+    cursor: pointer;
 }
 
 .hidden {
