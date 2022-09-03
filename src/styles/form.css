@@ -100,3 +100,16 @@ form img {
 .credit > select {
     margin-left: auto;
 }
+
+.event-builder > .sub-threads {
+    display: block;
+    padding: 0.5em 2.5em 0.5em 2.5em;
+}
+
+.event-builder textarea {
+    height: 5rem;
+}
+
+.event-builder .btn-small {
+    margin: 1em 0 1em 0;
+}
