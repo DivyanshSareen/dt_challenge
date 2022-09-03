@@ -62,3 +62,13 @@ h2 {
 .hidden {
     display: none;
 }
+
+.drive-embed > iframe{
+    width: 100%;
+    padding: 2em;
+    height: 100%;
+}
+
+.doc {
+    height: 80vh;
+}
