@@ -1,13 +1,102 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 textarea {
     border: none;
     box-shadow: var(--shadow);
     resize: none;
     width: 100%;
     border-radius: 10px;
-    padding: 1em
+    padding: 1em;
 }
 
 .reflection-input {
     height: 10rem;
 }
 
+.reflection-button {
+    border-radius: 10px;
+    margin-top: 1em;
+    align-self: flex-end;
+}
+
+.sub-thread-options {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.4em;
+}
+
+select {
+    height: 2.5em;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    box-shadow: var(--shadow);
+}
+
+.sub-thread-options > img {
+    height: 25px;
+    width: 25px;
+}
+
+form img {
+    height: 25px;
+    width: 25px;
+}
+
+.thread-head > span {
+    padding-left: 2em;
+}
+
+.btn-small {
+    font-size: 0.75rem;
+    margin: 0 auto 1em 1em;
+}
+
+.thread-head {
+    display: flex;
+    align-items: center;
+    height: 3em;
+    background: #FDFDF7;
+    border-top: 2px var(--nav-background) solid;
+    border-bottom: 2px var(--nav-background) solid;
+}
+
+.sub-threads {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.sub-thread {
+    background-color: var(--nav-background);
+    border-radius: 10px 10px 0 0;
+}
+
+.sub-thread > h6 {
+    font-size: 1rem;
+    padding: 0.5em;
+}
+
+.thread-summary {
+    background: var(--nav-background);
+    border-radius: 10px 10px 0 0;
+}
+
+.thread-summary > h6 {
+    font-size: 1rem;
+    padding: 0.5em;
+}
+
+.credit {
+    display: flex;
+    align-items: center;
+}
+
+.credit > select {
+    margin-left: auto;
+}

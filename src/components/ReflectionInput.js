@@ -1,7 +1,11 @@
-const ReflectionAsset = (data) => {
-  return ` <div class="asset">
+const ReflectionInput = () => {
+  return `<div class="asset">
                 <h3 class="asset-head">${data.asset_title}</h3>
-                <div class="asset-content">${data.display_asset_reflection}
+                <div class="asset-content">
+                    <form>
+                        <textarea class="reflection-input" placeholder="Reflect as per given guidelines"></textarea>
+                        <button class="reflection-button">submit</button>
+                    </form>
                 </div>
                 <div class="asset-description hidden">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
@@ -12,4 +16,4 @@ const ReflectionAsset = (data) => {
             </div>`;
 };
 
-export default ReflectionAsset;
+export default ReflectionInput;

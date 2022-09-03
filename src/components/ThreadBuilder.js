@@ -1,56 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="svg" href="./favicon.svg">
-    <link rel="stylesheet" href="./src/styles/style.css">
-    <title>Deep Thought</title>
-</head>
-
-<body>
-    <nav>
-        <img src="./src/assets/logo.svg">
-        <div class="options">
-            <img src="./src/assets/home.svg">
-            <img src="./src/assets/settings.svg">
-            <img src="./src/assets/notification.svg">
-            <img src="./src/assets/profile.svg">
-            <img src="./src/assets/options.svg">
-        </div>
-    </nav>
-    <aside class="journey-board hidden">
-        <div class="journey-head">
-            <h3>Journey Board</h3>
-            <img class="journey-option" src="./src/assets/cross.png">
-        </div>
-        <ol class="journey-list">
-        </ol>
-    </aside>
-    <aside class="journey-board journey-board--closed">
-        <div class="journey-head">
-            <img class="journey-option" src="./src/assets/burger.svg">
-        </div>
-        <div class="badge">1</div>
-    </aside>
-    <main>
-        <h1>You Are Taking Challenges Of New Project</h1>
-        <h2>demo task</h2>
-        <div class="asset-grid">
-            <div class="asset">
-                <h3 class="asset-head">${data.asset_title}</h3>
-                <div class="asset-content">fsd
-                </div>
-                <div class="asset-description hidden">
-                    ${data.asset_description}
-                </div>
-                <div class="asset-expand">
-                    <img src="./src/assets/angle-down-solid.svg">
-                </div>
-            </div>
-            <div class="asset">
+const ThreadBuilder = () => {
+  return ` <div class="asset">
                 <h3 class="asset-head">${data.asset_title}</h3>
                 <div class="asset-content">
                     <form class="thread-builder">
@@ -113,11 +62,7 @@
                 <div class="asset-expand">
                     <img src="./src/assets/angle-down-solid.svg">
                 </div>
-            </div>
-        </div>
-    </main>
-    <button class="next">Next</button>
-    <script type="module" src="./src/index.js"></script>
-</body>
+            </div>`;
+};
 
-</html>
+export default ThreadBuilder;
