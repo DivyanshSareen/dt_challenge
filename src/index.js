@@ -1,6 +1,5 @@
 import data from "./data.json" assert { type: "json" };
 import JourneyList from "./components/JourneyList.js";
-import axios from "axios";
 
 axios
   .get(
