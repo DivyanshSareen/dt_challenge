@@ -1,6 +1,13 @@
 import data from "./data.json" assert { type: "json" };
-import assetGrid from "./components/AssetGrid.js";
 import JourneyList from "./components/JourneyList.js";
+import axios from "axios";
+
+axios
+  .get(
+    "https://dev.deepthought.education/assets/uploads/files/others/project.json",
+    { mode: "no-cors", headers: { "Access-Control-Allow-Origin": "*" } }
+  )
+  .then((e) => console.log(e));
 
 // rendering asset grid
 // const asset_grid = document.getElementsByClassName("asset-grid")[0];
@@ -14,7 +21,6 @@ journey_list[0].innerHTML = JourneyList(data);
 const journey_option = document.getElementsByClassName("journey-option");
 const journey_board = document.getElementsByClassName("journey-board");
 
-console.log(journey_option);
 journey_option[0].addEventListener("click", () => {
   journey_board[1].classList.remove("hidden");
   journey_board[0].classList.add("hidden");
